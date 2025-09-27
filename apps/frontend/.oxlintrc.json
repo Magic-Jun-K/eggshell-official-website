@@ -1,0 +1,26 @@
+{
+  "extends": ["../../.oxlintrc.json"],
+  "rules": {
+    "react/prop-types": "warn",
+    "react/no-deprecated": "error",
+    "react/no-unsafe": "error",
+    "react/jsx-key": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "ignorePatterns": [
+    "postcss.config.js",
+    "tailwind.config.ts",
+    "vite.config.ts",
+    "tsconfig*.json",
+    "tsconfig*.json",
+    "public/",
+    ".vite/",
+    "dist-ssr/"
+  ],
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "react": true
+  }
+}
