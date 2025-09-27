@@ -1,0 +1,30 @@
+{
+  "extends": ["oxlint:recommended"],
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": "error",
+    "prefer-const": "warn",
+    "no-undef": "error",
+    "no-redeclare": "error",
+    "no-debugger": "warn"
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "build/",
+    "*.config.js",
+    "*.config.ts",
+    "*.config.mjs",
+    "*.config.cjs",
+    "coverage/",
+    ".turbo/",
+    ".husky/",
+    "*.min.js",
+    "*.min.ts"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2022": true
+  }
+}
